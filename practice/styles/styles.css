@@ -8,8 +8,11 @@
     color: steelblue;
 }
 img {
-    width: 200%;
+    width: 100%;
 }
 p {
     width: 100%;
+}
+a {
+    font-size: 1.5em;
 }
