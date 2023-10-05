@@ -7,3 +7,9 @@
     background-color: white;
     color: steelblue;
 }
+img {
+    width: 200%;
+}
+p {
+    width: 100%;
+}
