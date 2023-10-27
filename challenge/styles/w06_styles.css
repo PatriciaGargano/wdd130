@@ -1,3 +1,27 @@
-#head {
-    font:Vani bold;
-}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 200px; /* El primer 1fr se ajusta al contenido, el segundo 200px es para el cuadrado gris */
+    grid-gap: 20px; /* Espacio entre las columnas */
+  }
+  
+  .text {
+    grid-column: 1; /* Coloca el texto en la primera columna */
+  }
+  
+  .img {
+    grid-column: 1; /* Coloca la imagen en la primera columna */
+    grid-row: 2; /* Coloca la imagen en la segunda fila */
+  }
+  
+  .square {
+    background-color: gray;
+    grid-column: 2; /* Coloca el cuadrado gris en la segunda columna */
+    grid-row: 1 / span 2; /* Ocupa dos filas para coincidir con el texto y la imagen */
+    width: 200px;
+    height: 200px; /* Tamaño del cuadrado gris */
+  }
+ 
+  
+  
+  
+  
