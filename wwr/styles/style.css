@@ -153,13 +153,13 @@ footer .social img {
 .msg p {
     padding-bottom: 15px;
 }
-#home-grid {
+.home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 20px;
 }
 .rivers-card, .camping-card, .rapids-card {
-    margin: 100px 0; 
+    margin: 200px 0; 
     text-align: center;
 }  
 .card-img {
