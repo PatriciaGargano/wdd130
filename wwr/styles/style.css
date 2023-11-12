@@ -180,7 +180,7 @@ footer .social img {
 
 .card-img,.rivers-card {
     grid-column: 2/4;
-    grid-row: 2/3;
+    grid-row: 2/4;
 }
 
 .card-image,.camping-card {
