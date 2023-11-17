@@ -307,7 +307,11 @@ form {
 .moveDown {
     margin-top: 3em;
 }
-   
+.rivers {
+    display:grid;
+    grid-template-columns: 2/4;
+}
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
