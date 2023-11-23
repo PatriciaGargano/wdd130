@@ -309,9 +309,39 @@ form {
 }
 .rivers {
     display:grid;
-    grid-template-columns: 2/4;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2,fr);
+}
+.rivers p{
+    text-align: center;
+    grid-column: 2/3;
+    grid-row:1/2;
+    margin:20 px auto;
+    
+}
+.rivers img{
+    margin:20px auto;
+    border:10px solid blue;
 }
 
+.canyon {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2,fr);
+  
+}
+
+.canyon p{
+    text-align: center;
+    grid-column: 1/2;
+    grid-row:1/2;
+    justify-items: center;
+    align-items: center;
+}
+.canyon img{
+    margin:20px auto;
+    border:10px solid blue;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
