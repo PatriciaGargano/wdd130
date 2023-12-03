@@ -182,7 +182,7 @@ nav {
 .educational {
     grid-column: 1/6;
 }
-section.university {
+.university {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column: 2/9;
