@@ -61,17 +61,19 @@ nav {
     padding-top:20px;
 }
 .hero{
-        max-width: 1600px;
+       /* max-width: 1600px;
         margin: 0 auto; 
-        margin-top: -100px; 
-        position: relative; 
-        z-index: 1;
-        background-color: #E4C1F9;
+        margin-top: -100px; */
+       /* z-index: 1;*/
+       /*background-color: #E4C1F9;*/
+       display: flex;
+    align-items: flex-start;
+    position: relative;
     }
 .hero-img {
     max-width: 100%;
-    height: auto;
-    grid-column: 1 / -1; 
+    /*height: auto;
+    grid-column: 1 / -1; */
 }
 .hero-title {
     color:black;
@@ -89,10 +91,22 @@ nav {
 .hero-p {
     color:rgb(66, 2, 71);
     font-size: 1.4em;
+    font-style: italic;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
     padding:20px;
+}
+.sticky-note {
+    position: absolute;
+    top: 50px; 
+    left: 1300px; 
+    background-color:#D0F4DE ; 
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2; 
+    text-align: center;
+    font-style:italic;
 }
 .home-grid{
     display:grid;
@@ -100,34 +114,40 @@ nav {
 }
 .myhistory-card {
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    grid-template-columns: auto 1fr;
+    /*grid-template-rows:repeat(4,1fr);*/
+    align-items: center;
+    column-gap: 5px;
 }
 .title-story {
+    display:grid;
+    grid-column:2;
+    grid-row:1;
     text-align: center;
+    
 }
 .myhistory-card p{
     text-align: left;
     grid-column: 2;
-    grid-row: 1/4;
-    padding: 0 1em;
-    font-size: 2em;
+    grid-row: 1/span 4;
+    padding: 0 0.5em;
+    font-size: 1.4em;
 }
+
 .myhistory-card img {
-    margin: 10px auto;
-    margin-left: 8px;
-    margin-right:8px;
+    margin: 10px 8px;
     border-radius:10px;
     grid-column: 1;
-    grid-row: 1/4;
-    max-width: 100%;
+    grid-row: 1/span 4;
+    max-width: 90%;
 }
 .title-story {
+    grid-column:2; 
     text-align: center;
 }
 .what_to_expect-card {
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:  1fr auto;
     justify-content: center;
 }
 .what_to_expect-card  p{
