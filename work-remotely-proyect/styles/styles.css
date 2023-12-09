@@ -11,10 +11,15 @@
   --heading-font: "Noto Sans",Arial,sans-serif;
   --paragraph-font: "Noto Sans",Arial,sans-serif;
 }
-body{
-    font-family: 'Noto Sans';
+*{
     margin:0;
     padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Sans';
+    /*margin:0;
+    padding:0;*/
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: "Noto Sans",Arial,sans-serif;
@@ -67,8 +72,8 @@ nav {
        /* z-index: 1;*/
        /*background-color: #E4C1F9;*/
        display: flex;
-    align-items: flex-start;
-    position: relative;
+       align-items: flex-start;
+       position: relative;
     }
 .hero-img {
     max-width: 100%;
@@ -121,8 +126,6 @@ nav {
 }
 .myhistory-card {
     display:grid;
-    grid-template-columns: auto 1fr;
-    /*grid-template-rows:repeat(4,1fr);*/
     align-items: center;
     column-gap: 5px;
 }
@@ -131,6 +134,7 @@ nav {
     grid-column:2;
     grid-row:1;
     text-align: center;
+    margin-top:10px;
     
 }
 .myhistory-card p{
@@ -154,21 +158,22 @@ nav {
 }
 .what_to_expect-card {
     display:grid;
-    grid-template-columns:  1fr auto;
-    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
 }
 .what_to_expect-card  p{
     text-align: left;
     grid-column: 1;
     grid-row: 2;
-    padding: 0 1em;
+    padding: 0 0.5em;
+    font-size: 1.4em;
 }
 .what_to_expect-card  img{
-    margin: 0 10px 10px 0;
+    margin: 10px 8px;
     border-radius:10px;
     grid-row: 1/4;
     grid-column: 2;
-    max-width: 100%;
+    max-width: 90%;
 }
 .what_to_expect-title {
     text-align: center;
@@ -254,17 +259,34 @@ a {
 }
 .tips-title {
     display:grid;
-    grid-column:2;
-    grid-row:1;
+    /*grid-column:2;
+    grid-row:1;*/
     text-align: center;
+    align-self: center;
     
 }
-.title-p{
+.tips-p{
     text-align: left;
     grid-column: 2;
     grid-row: 1/span 4;
     padding: 0 0.5em;
     font-size: 1.4em;
+}
+
+.paragraphs{
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    font-style: italic;
+}
+.paragraphs-img-1{
+    margin:10px 8px;
+    max-width: 90%;
+    border-radius:10px;
+}
+.paragraphs-img-2{
+    margin:10px 8px;
+    max-width: 90%;
+    border-radius:10px;
 }
 footer{
     background-color: #FF99C8;
