@@ -103,7 +103,6 @@ nav {
     text-align: center;
     font-style: italic;
     font-size: 1.4em;
-    font-weight:100px;
     margin-bottom:30px;
 }
 .sticky-note {
@@ -168,7 +167,7 @@ padding:10px 10px;
     text-align: left;
     grid-column: 1;
     grid-row: 2/span 4;
-    margin-right:10 px;
+    margin-right:10px;
     font-size: 1.4em;
     line-height: 30px;
 }
