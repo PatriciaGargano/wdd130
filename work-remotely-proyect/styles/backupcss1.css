@@ -1,0 +1,63 @@
+.introduction{
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows:repeat(3,1fr);
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px 0;
+}
+.introduction-msg {
+  display: grid;
+  grid-column: 2/-2;
+  grid-template-columns: repeat(12, 1fr);
+}
+.education-title {
+    /* text-align: center; */
+    grid-column: 1/6;
+    grid-row: 1;
+    justify-self: center;
+}
+.card-img-woman-studying {
+    margin: 10px auto;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 10px;
+    grid-column: 7/12;
+    grid-row: 1/4;
+    max-width: 100%;
+}
+.educational {
+    grid-column: 1/6;
+}
+.university {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 2/9;
+}
+h2.university-t {
+    grid-column: 1/4;
+}
+p.university-p {
+    grid-column: 4/13;
+}
+.mother-studying-card {
+    margin: 0 10px 10px 0;
+    border-radius: 10px;
+    grid-row: 3/6;
+    grid-column: 6/10;
+    max-width: 80%;
+    float: right;
+}
+section.onlinecourses-card {
+    grid-column: 2/-2;
+}
+a {
+    text-decoration: none;
+    }
+.aside {
+        grid-column: 10/12;
+        border: solid #000 1px;
+        padding: 5px;
+        font-style: italic;
+        box-shadow: 3px 3px 10px #3e3e3e;
+    }
